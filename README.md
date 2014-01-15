@@ -26,9 +26,15 @@ A simple python file-storage solution using dropbox and google app engine
 * Select "src" folder as the project folder in the GAE SDK.
 * Deploy it to App Engine.
 
+
 ###Example###
 http://py-storage.appspot.com/test
 
 This serves the file 'test' that is located in the specified folder of my Dropbox's Public directory.
 
 
+###Access the files under your own domain###
+* Let's say you want to acces the test file as \<files.yourwebsite.com\>/test
+* Login to your App Engine, set custom domain for your app as \<files.yourwebsite.com\>
+* In your website's DNS settings: point CNAME record for \<files.yourwebsite.com\> to ghs.googlehosted.com
+* You're done.
