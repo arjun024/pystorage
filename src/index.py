@@ -31,7 +31,7 @@ urlfetch.set_default_fetch_deadline(60)
 
 ########## CHANGE THESE TO REFLECT YOUR PERSONAL SETTINGS ##############
 # Your Dropbox user-id  and folder-name. 
-# Your public folder have the will have the following syntax: 
+# Your public folder will have the following syntax: 
 # dl.dropboxusercontent.com/u/<USERID>/<YOURFOLDER>/examplefile
 # If you want to use the entire "Public" folder, set DROPBOX_FOLDER = ""
 DROPBOX_USERID = "<USERID>"
