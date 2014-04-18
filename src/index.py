@@ -60,6 +60,13 @@ class DboxHandler(webapp2.RequestHandler):
       self.response.out.write("Error: status code:" + str(fetched.status_code))
 
 
+class IndexPageHandler(webapp2.RequestHandler):
+  def get(self, base_url=None):
+    #Dropbox will not provide you an index page
+    #Give whatever you need to show in your index page
+    self.response.out.write("This is your file repository's homepage. Please navigate to the appropriate url to access stored files.")
+
 app = webapp2.WSGIApplication([
+  (r"/", IndexPageHandler),
   (r"/(.*)", DboxHandler)
 ], debug=False)
