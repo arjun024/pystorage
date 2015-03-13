@@ -5,8 +5,8 @@ A simple python file-storage solution using dropbox and google app engine
 
 
 ###What services we use here###
-* [Dropbox](dropbox.com) - to store your files.
-* [Google App Engine](appengine.google.com) - python runtime where we implement this handler code.
+* [Dropbox](http://dropbox.com) - to store your files.
+* [Google App Engine](http://appengine.google.com) - python runtime where we implement this handler code.
 
 
 ###How we build our environment###
@@ -26,7 +26,7 @@ A simple python file-storage solution using dropbox and google app engine
 * Create a Google App Engine account.
 * register a unique app-id.
 * now your application will run at \<app-id\>.appspot.com
-* Dowload [Python](python.org/download/releases/2.7.4/) and [Google App Engine SDK](googleappengine.googlecode.com/files/GoogleAppEngine-1.8.9.msi)
+* Dowload [Python](http://python.org/download/releases/2.7.4/) and [Google App Engine SDK](http://googleappengine.googlecode.com/files/GoogleAppEngine-1.8.9.msi)
 * Download this project.
 * Select "src" folder as the project folder in the GAE SDK.
 * Deploy it to App Engine.
