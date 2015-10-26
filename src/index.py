@@ -43,10 +43,10 @@ class DboxHandler(webapp2.RequestHandler):
   def get(self, url_path):
     slash_position = self.request.url.find("/", len(self.request.scheme + "://"))
     if slash_position == -1:
-      dropbox_url = "http://"
+      dropbox_url = "https://"
     else:
       dropbox_path = "" if DROPBOX_FOLDER == "" else "/" + DROPBOX_FOLDER
-      dropbox_url = "http://dl.dropbox.com/u/" + DROPBOX_USERID + dropbox_path + self.request.url[slash_position:]
+      dropbox_url = "https://dl.dropbox.com/u/" + DROPBOX_USERID + dropbox_path + self.request.url[slash_position:]
 
     fetched = urlfetch.fetch(dropbox_url)
 
